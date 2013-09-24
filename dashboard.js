@@ -1,5 +1,4 @@
 
-
 function showAverage(data) {
     // Return a new graph.
     var data2 = [];
@@ -64,7 +63,7 @@ function fillLeaderBoard(data) {
             break;
 
     }
-    $(x).addClass('flag travix active')
+    $(x).addClass('flag companyabc active')
         .attr('id', '0')
         .appendTo($("#brandFilter")) //main div
         .css('margin-bottom', '5px')
@@ -133,7 +132,7 @@ function ShowLeaderBoard(data, i) {
     }
 
 
-    $(a).addClass('flag ' + (data[i].brand == 'BudgetairDE' ? 'flugladen' : (getCountry(data[i].brand) == 'ES' ? 'budgetair' : getBrand(data[i].brand))))
+    $(a).addClass('flag ' + (data[i].brand == 'companyabc' ? 'companyabc' : (getCountry(data[i].brand) == 'ES' ? 'companyabc' : getBrand(data[i].brand))))
     .attr('id', data[i].siteId)
 		.appendTo($("#brandFilter")) //main div
 		.click(function () {
@@ -260,16 +259,16 @@ function initOverlay() {
    //     searchToConfirmed: { "baseAverageCollection": [0.26, 0.33999999999999997, 0.16999999999999998, 0.16, 0.02, 0.02, 0.02, 0.02, 0.03, 0.3, 0.36, 0.36, 0.35000000000000003, 0.5, 0.36, 0.33999999999999997, 0.32, 0.38, 0.38, 0.32, 0.38, 0.38999999999999996, 0.45999999999999996, 0.53, 0.38999999999999996, 0.32, 0.29, 0.54999999999999993, 0.37, 0.24, 0.65, 0.77999999999999992, 0.51, 0.31, 0.069999999999999993, 0.06, 0.06, 0.06, 0.06, 0.06, 0.05, 0.05, 0.06, 0.069999999999999993, 0.069999999999999993, 0.08, 0.08, 0.069999999999999993], "upperValueCollection": [0.84, 1.1300000000000001, 0.5099999999999999, 0.51, 0.030000000000000002, 0.030000000000000002, 0.030000000000000002, 0.030000000000000002, 0.039999999999999994, 0.98, 1.2, 1.16, 1.1199999999999999, 1.67, 1.1400000000000001, 1.0699999999999998, 1.01, 1.24, 1.26, 1.01, 1.23, 1.26, 1.5, 1.76, 1.2299999999999998, 0.84, 0.76, 1.44, 1.27, 0.83, 1.92, 2.04, 1.38, 0.89999999999999991, 0.12000000000000001, 0.079999999999999988, 0.079999999999999988, 0.09, 0.09, 0.079999999999999988, 0.060000000000000005, 0.069999999999999993, 0.079999999999999988, 0.09, 0.09, 0.1, 0.11, 0.09], "lowerValueCollection": [0.0, 0.0, 0.0, 0.0, 0.01, 0.01, 0.01, 0.01, 0.019999999999999997, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.019999999999999997, 0.039999999999999994, 0.039999999999999994, 0.03, 0.03, 0.039999999999999994, 0.04, 0.030000000000000002, 0.039999999999999994, 0.05, 0.05, 0.060000000000000005, 0.05, 0.05] }
     }];
     
-//        { "brand": "CheapTicketsCH", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
-//        { "brand": "BudgetAir", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
-//        { "brand": "BudgetairAT", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
-//        { "brand": "BudgetairBE", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
-//        { "brand": "BudgetairDE", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
-//        { "brand": "BudgetairFR", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
-//        { "brand": "BudgetairIE", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
-//        { "brand": "BudgetairUK", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
-//        { "brand": "CheapticketsES", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
-//        { "brand": "ThomasCookBE", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) }
+//        { "brand": "companyabc", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
+//        { "brand": "companyabc", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
+//        { "brand": "companyabc", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
+//        { "brand": "companyabc", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
+//        { "brand": "companyabc", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
+//        { "brand": "companyabc", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
+//        { "brand": "companyabc", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
+//        { "brand": "companyabc", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
+//        { "brand": "companyabc", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) },
+//        { "brand": "companyabc", "yesterdaysTotal": Math.round(Math.random() * 100), "todaysTotal": Math.round(Math.random() * 100) }
     //};
     var numOutput = "0";
     for (var i = 1; i <= 72; i++) {
