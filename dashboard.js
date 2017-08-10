@@ -2,11 +2,7 @@
 function showAverage(data) {
     // Return a new graph.
     var data2 = [];
-    alert('init data'+data.data);
-    var sum = 1;
-    var avg = 0;
-    //get the average
-    var total = 0;
+    var sum = 1, avg = 0, total = 0;
     $.each(data.data, function () { total += this[1]; });
     avg = total / data.data.length;
     alert('avg'+avg);
@@ -14,7 +10,6 @@ function showAverage(data) {
     for (var x = 0; x <= data.data.length; x++) {
         data2.push([data.data[0][x], avg]);
     }
-    alert('dt set:'+data2[1]);
     //draw for 2 datasets
     return data2;
 }
